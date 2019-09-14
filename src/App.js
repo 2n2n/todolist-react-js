@@ -15,10 +15,13 @@ function App() {
         </p>
         <input type="text" ref={(ref) => _input = ref}/>
         <button onClick={() => {
-          console.log(_input)
+          if (_input.value == "") { 
+            alert("Please input a value.");
+            return;
+          }
           updateTasks([
             ...tasks,
-            'aww'
+            _input.value
           ])
         }}>ADD TASK</button>
         <ul>
