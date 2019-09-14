@@ -1,11 +1,9 @@
 import React, {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import TaskItem from './components/TaskItem';
 
-function App() {
-  let _input = null;
-  const [tasks, updateTasks] = useState([]);
-  
+function App() {  
   return (
     <div className="App">
       <header className="App-header">
@@ -13,16 +11,8 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <input type="text" ref={(ref) => _input = ref}/>
-        <button onClick={() => {
-          console.log(_input)
-          updateTasks([
-            ...tasks,
-            'aww'
-          ])
-        }}>ADD TASK</button>
         <ul>
-          {tasks.map((task, k) => <li key={k}>{task}</li>)}
+          <TaskItem data="wakekeke"></TaskItem>
         </ul>
         <a
           className="App-link"

@@ -22,3 +22,18 @@ for more info visit: (https://github.com/facebook/create-react-app)[https://gith
 #### Props
 - Props on the other hand is immutable (Once loaded it will stay as is and will not change unless, your child's props are dependent to a parent's state.. it will definitely change.)
 
+
+## Components
+#### Two Types of components
+- We can write components in two ways, either using a function or creating a class. With normal JS(your browser way) you cant create classes, we usually use ES6 for this in order to declare classes on our Javascript. Lukily, our `create-react-app` iscapable of doing so because it's using ES6 at the background.
+
+A. Functional Component (dumb component)
+
+B. Class-Based Component
+
+
+## Debugging
+[https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
+
+## Thinking the React way
+[https://reactjs.org/docs/thinking-in-react.html](https://reactjs.org/docs/thinking-in-react.html)
